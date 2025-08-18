@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>KRT ENGENHARIA</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="imagens/logo rkt engenharia.png" alt="Logo da RKT ENGENHARIA">
+                </a>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <div class="menu-mobile" onclick="toggleMenu()">
+                &#9776;
+            </div>
+
+            <!-- Menu Desktop -->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#habilidades">Conhecimentos e Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu Lateral -->
+        <div class="menu-lateral" id="menuLateral">
+            <ul>
+                <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
+                <li><a href="#habilidades" onclick="closeMenu()">Conhecimentos e Habilidades</a></li>
+                <li><a href="#projetos" onclick="closeMenu()">Projetos</a></li>
+                <li><a href="#equipe" onclick="closeMenu()">Equipe</a></li>
+                <li><a href="#contato" onclick="closeMenu()">Contato</a></li>
+            </ul>
+        </div>
+
+        <!-- Overlay -->
+        <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+    </header>
+
+    <main>
+        <!-- Seção Topo do Site -->
+        <section id="inicio" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>INOVANDO HOJE PARA PROTEGER O AMANHÃ<span>.</span></h1>
+                        <p>A RKT Engenharia é formada por estudantes da UFPA comprometidos com a transformação social e ambiental por meio da Engenharia Sanitária e Ambiental. Em constante formação, buscamos aplicar o conhecimento técnico com ética, inovação e responsabilidade, encarando cada desafio como uma oportunidade de aprendizado e contribuição para soluções sustentáveis que impactem positivamente a sociedade.</p>             
+                        <div class="btn-contato">
+                            <a href="#contato">
+                                <button>Entre em Contato</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="imagens/ecology-concept-vector-1328949-removebg-preview.png" alt="Ilustração com elementos ecológicos">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Conhecimentos e Habilidades -->
+        <section id="habilidades" class="conhecimentos-e-habilidades">
+            <div class="interface">
+                <h2>CONHECIMENTOS E <span>HABILIDADES.</span></h2>
+                <div class="flex">
+                    <div class="conhecimentos-habilidades-box">
+                        <i class="bi bi-box-fill"></i>
+                        <h3>AutoCAD e REVIT</h3>
+                        <p>Usuários de nível intermediário em AutoCAD e REVIT, buscando aprimoramento constante.</p>
+                    </div>
+
+                    <div class="conhecimentos-habilidades-box">
+                        <i class="bi bi-map"></i>
+                        <h3>QGIS e ArcGIS</h3>
+                        <p>Geoprocessamento com ArcGIS e QGIS aplicado a projetos ambientais e territoriais.</p>
+                    </div>
+
+                    <div class="conhecimentos-habilidades-box">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <h3>Licenciamento Ambiental</h3>
+                        <p>Análise e regularização de projetos conforme normas ambientais vigentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="projetos">
+            <div class="interface">
+                <h2>NOSSOS <span>PROJETOS.</span></h2>
+                <div class="flex">
+                    <div class="projeto-box">
+                        <img src="imagens/projeto1.jpg" alt="Projeto 1">
+                        <p>Projeto de drenagem urbana sustentável com uso de biovaletas.</p>
+                    </div>
+
+                    <div class="projeto-box">
+                        <img src="imagens/projeto2.jpg" alt="Projeto 2">
+                        <p>Mapeamento de áreas de risco utilizando QGIS e dados topográficos.</p>
+                    </div>
+
+                    <div class="projeto-box">
+                        <img src="imagens/projeto3.jpg" alt="Projeto 3">
+                        <p>Estudo de impacto ambiental para sistemas de abastecimento de água.</p>
+                    </div>
+
+                    <div class="projeto-box">
+                        <img src="imagens/projeto4.jpg" alt="Projeto 4">
+                        <p>Plano de gestão de resíduos sólidos em comunidades ribeirinhas.</p>
+                    </div>
+
+                    <div class="projeto-box">
+                        <img src="imagens/projeto5.jpg" alt="Projeto 5">
+                        <p>Educação ambiental em escolas públicas da região metropolitana.</p>
+                    </div>
+
+                    <div class="projeto-box">
+                        <img src="imagens/projeto6.jpg" alt="Projeto 6">
+                        <p>Georreferenciamento de nascentes e corpos hídricos urbanos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Equipe -->
+        <section id="equipe" class="equipe">
+            <div class="interface">
+                <h2>NOSSA <span>EQUIPE.</span></h2>
+                <div class="flex">
+                                        <div class="equipe-box">
+                        <img src="imagens/ruan.jpg" alt="Foto de Ruan Sobral">
+                        <h3>Ruan Sobral</h3>
+                        <p>Está no 7º semestre, Experiência com QGIS, ArcGIS e Revit. Noções de licenciamento ambiental. Atuou por dois anos como bolsista pibic no LEHMC, dedicando-se ao geoprocessamento.</p>
+                    </div>
+
+                    <div class="equipe-box">
+                        <img src="imagens/KAT.jpg" alt="Foto de Katellen Raissa">
+                        <h3>Katellen Vieira</h3>
+                        <p>Está no 7º semestre, Experiência com QGIS, encaminhamentos e declarações de endereço. Integra o laboratório "Saber e Conviver nas Baixadas", com foco em territorialidade e inclusão social.</p>
+                    </div>
+
+                    <div class="equipe-box">
+                        <img src="imagens/THAYNÁ.jpg" alt="Foto de Kellen Thayná">
+                        <h3>Thayná Silva</h3>
+                        <p>Está no 4º semestre, Habilidades em AutoCAD e Revit, aprendizado em QGIS. Foi voluntária no Grupo de Pesquisa de Residuos Sólidos e Sustentabilidade - GPRSS, atuou em projetos de resíduos e educação ambiental.</p>
+                    </div>
+                </div>
+
+                <div class="caesa-info">
+                    <p>Todos os integrantes fazem parte do <strong>Centro Acadêmico de Engenharia Sanitária e Ambiental – CAESA</strong>, onde desenvolvem habilidades como responsabilidade, organização e trabalho em equipe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="contato">
+            <div class="interface">
+                <h2>FALE <span>CONOSCO.</span></h2>
+                <form onsubmit="enviarWhatsapp(); return false;">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <div class="btn-contato">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Menu lateral
+        const menuLateral = document.getElementById("menuLateral");
+        const menuOverlay = document.getElementById("menuOverlay");
+
+        function toggleMenu() {
+            menuLateral.classList.toggle("active");
+            menuOverlay.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            menuLateral.classList.remove("active");
+            menuOverlay.classList.remove("active");
+        }
+
+        // Enviar WhatsApp
+        function enviarWhatsapp() {
+            const nome = document.getElementById("nome").value.trim();
+            const mensagem = document.getElementById("mensagem").value.trim();
+            if (!nome || !mensagem) {
+                alert("Por favor, preencha nome e mensagem antes de enviar.");
+                return;
+            }
+            const numeroWhatsapp = "5591981061385";
+            const texto = `Olá! Meu nome é ${nome} e gostaria de tratar sobre:\n\n${mensagem}`;
+            const link = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(texto)}`;
+            window.open(link, "_blank");
+        }
+    </script>
+</body>
+</html>
