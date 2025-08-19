@@ -457,7 +457,6 @@ section.conhecimentos-e-habilidades .flex {
 
 /* Tablet e celular */
 @media screen and (max-width: 1024px) {
-    /* Menu */
     .menu-mobile { 
         display: block; 
     }
@@ -466,65 +465,81 @@ section.conhecimentos-e-habilidades .flex {
     }
 
     header .logo img {
-        height: 120px; /* reduz a logo no mobile */
+        height: 100px; /* logo mais proporcional */
+    }
+
+    /* Ajuste do gap geral */
+    .flex {
+        gap: 40px;
     }
 
     /* Topo do site */
     section.topo-do-site .flex {
         flex-direction: column;
         text-align: center;
-        gap: 40px;
+        gap: 30px;
     }
 
     .txt-topo-site h1 {
-        font-size: 28px;
-        line-height: 34px;
+        font-size: 26px;
+        line-height: 32px;
     }
 
     .txt-topo-site p {
         font-size: 15px;
-        margin: 15px auto;
+        margin: 10px auto;
     }
 
     .img-topo-site img {
-        max-width: 250px;
+        max-width: 220px;
     }
 }
 
 /* Celulares menores */
 @media screen and (max-width: 768px) {
+    /* Ajuste gap global */
+    .flex {
+        gap: 25px;
+    }
+
     /* Projetos */
     #projetos .flex {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
     }
 
     .projeto-box {
-        max-width: 90%;
+        max-width: 95%;
     }
 
     /* Equipe */
     .equipe .flex {
         flex-direction: column;
-        gap: 30px;
     }
 
     .equipe-box {
-        max-width: 90%;
+        max-width: 95%;
     }
 
-    /* Botão contato ocupa largura total */
     .btn-contato button {
         width: 100%;
+    }
+
+    .menu-lateral {
+        width: 240px;
+        padding: 40px 15px;
     }
 }
 
 /* Smartphones muito pequenos */
 @media screen and (max-width: 480px) {
+    header .logo img {
+        height: 80px; /* logo reduzida */
+    }
+
     .txt-topo-site h1 {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 22px;
+        line-height: 28px;
     }
 
     .txt-topo-site p {
@@ -532,10 +547,15 @@ section.conhecimentos-e-habilidades .flex {
     }
 
     .conhecimentos-habilidades-box {
-        padding: 20px;
+        padding: 15px;
     }
 
     .contato form {
         padding: 0 10px;
     }
+
+    .projeto-box img {
+        max-height: 200px; /* evita distorção */
+    }
 }
+
