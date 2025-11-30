@@ -1,4 +1,5 @@
-/* ESTILO GERAL */
+/* ==============ESTILO GERAL============== */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +43,8 @@ body {
     transform: scale(1.05);
 }
 
-/* -- CABEÇALHO -- */
+/* ================CABEÇALHO================*/
+
 header {
     padding: 20px 4%;
     background: #fff;
@@ -61,7 +63,8 @@ header > .interface {
     height: 180px;
 }
 
-/* MENU NAV DESKTOP */
+/* -------- MENU DESKTOP -------- */
+
 .menu-desktop ul {
     list-style: none;
     display: flex;
@@ -83,7 +86,8 @@ header > .interface {
     transform: scale(1.05);
 }
 
-/* MENU MOBILE BOTÃO */
+/* -------- MENU MOBILE (BOTÃO) -------- */
+
 .menu-mobile {
     display: none;
     font-size: 32px;
@@ -92,11 +96,12 @@ header > .interface {
     z-index: 1001;
 }
 
-/* MENU LATERAL */
+/* -------- MENU LATERAL -------- */
+
 .menu-lateral {
     position: fixed;
     top: 0;
-    left: -280px; /* escondido inicialmente */
+    left: -280px;
     width: 280px;
     height: 100%;
     background: #fff;
@@ -133,7 +138,8 @@ header > .interface {
     color: #006644;
 }
 
-/* OVERLAY DO MENU MOBILE */
+/* -------- OVERLAY -------- */
+
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -152,7 +158,8 @@ header > .interface {
     visibility: visible;
 }
 
-/* -- TOPO DO SITE -- */
+/* =========================================================TOPO DO SITE========================================================= */
+
 section.topo-do-site {
     padding: 60px 4%;
 }
@@ -188,7 +195,7 @@ section.topo-do-site .flex {
     min-width: 280px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .img-topo-site img {
@@ -199,17 +206,15 @@ section.topo-do-site .flex {
     height: auto;
 }
 
-/* ANIMAÇÃO */
+/* -------- ANIMAÇÃO -------- */
+
 @keyframes flutuar {
-    0% { 
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(30px);
-    }
+    0% { transform: translateY(0); }
+    100% { transform: translateY(30px); }
 }
 
-/* CONHECIMENTOS E HABILIDADES */
+/* =========================================================CONHECIMENTOS E HABILIDADES========================================================= */
+
 section.conhecimentos-e-habilidades {
     padding: 60px 4%;
     background-color: #e1f3e2;
@@ -219,17 +224,11 @@ section.conhecimentos-e-habilidades {
 section.conhecimentos-e-habilidades h2 {
     font-size: 28px;
     margin-bottom: 40px;
-    font-weight: 800; 
+    font-weight: 800;
 }
 
 section.conhecimentos-e-habilidades h2 span {
     color: #228b22;
-}
-
-section.conhecimentos-e-habilidades .flex {
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
 }
 
 .conhecimentos-habilidades-box {
@@ -263,7 +262,8 @@ section.conhecimentos-e-habilidades .flex {
     color: #333;
 }
 
-/* PROJETOS */
+/* =========PROJETOS========= */
+
 #projetos {
     padding: 60px 4%;
     background: #f5f5f5;
@@ -282,21 +282,23 @@ section.conhecimentos-e-habilidades .flex {
 
 .projeto-box {
     width: 100%;
-    max-width: 500px;
+    max-width: 420px;
     text-align: center;
     background-color: white;
     border-radius: 12px;
-    padding: 25px;
+    padding: 20px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .projeto-box img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    width: 75%;    
+    height: auto;      
+    display: block;
+    margin: 0 auto;   
     border-radius: 10px;
 }
+
 
 .projeto-box p {
     margin-top: 15px;
@@ -308,7 +310,8 @@ section.conhecimentos-e-habilidades .flex {
     transform: translateY(-5px);
 }
 
-/* EQUIPE */
+/* ==============EQUIPE============== */
+
 .equipe {
     padding: 80px 4%;
 }
@@ -371,7 +374,8 @@ section.conhecimentos-e-habilidades .flex {
     line-height: 1.5;
 }
 
-/* Bloco informativo sobre CAESA */
+/* -------- bloco CAESA -------- */
+
 .caesa-info {
     margin-top: 40px;
     text-align: center;
@@ -385,7 +389,8 @@ section.conhecimentos-e-habilidades .flex {
     line-height: 1.6;
 }
 
-/* CONTATO */
+/* ================CONTATO================ */
+
 .contato {
     padding: 60px 4%;
     background-color: #e1f3e2;
@@ -453,27 +458,28 @@ section.conhecimentos-e-habilidades .flex {
     transform: scale(1.05);
 }
 
-/* RESPONSIVIDADE */
+/* ============RESPONSIVIDADE============ */
 
-/* Tablet e celular */
+/* -------- Tablet e celular -------- */
+
 @media screen and (max-width: 1024px) {
-    .menu-mobile { 
-        display: block; 
+
+    .menu-mobile {
+        display: block;
     }
-    .menu-desktop { 
-        display: none; 
+
+    .menu-desktop {
+        display: none;
     }
 
     header .logo img {
-        height: 100px; /* logo mais proporcional */
+        height: 100px;
     }
 
-    /* Ajuste do gap geral */
     .flex {
         gap: 40px;
     }
 
-    /* Topo do site */
     section.topo-do-site .flex {
         flex-direction: column;
         text-align: center;
@@ -495,14 +501,14 @@ section.conhecimentos-e-habilidades .flex {
     }
 }
 
-/* Celulares menores */
+/* -------- Celulares até 768px -------- */
+
 @media screen and (max-width: 768px) {
-    /* Ajuste gap global */
+
     .flex {
         gap: 25px;
     }
 
-    /* Projetos */
     #projetos .flex {
         flex-direction: column;
         align-items: center;
@@ -512,7 +518,6 @@ section.conhecimentos-e-habilidades .flex {
         max-width: 95%;
     }
 
-    /* Equipe */
     .equipe .flex {
         flex-direction: column;
     }
@@ -531,10 +536,12 @@ section.conhecimentos-e-habilidades .flex {
     }
 }
 
-/* Smartphones muito pequenos */
+/* -------- Smartphones muito pequenos (até 480px) -------- */
+
 @media screen and (max-width: 480px) {
+
     header .logo img {
-        height: 80px; /* logo reduzida */
+        height: 80px;
     }
 
     .txt-topo-site h1 {
@@ -555,7 +562,6 @@ section.conhecimentos-e-habilidades .flex {
     }
 
     .projeto-box img {
-        max-height: 200px; /* evita distorção */
+        max-height: 200px;
     }
 }
-
